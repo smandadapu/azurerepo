@@ -1,10 +1,9 @@
-pipeline{
-agent any
-stages {
-stage('scm') {
- echo 'pulling' + env.BRANCH_NAME
- checkout scm
-}
-}
+node {
+    def branch = scm.branches[0].name
 
+stage('Clone sources') {
+        
+        echo 'branch'
+    }
+    
 }

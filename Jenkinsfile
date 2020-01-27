@@ -8,6 +8,7 @@ pipeline {
       steps {
         git branch: "${params.BRANCH}", url: 'https://github.com/smandadapu/azurerepo.git'
         echo '${BRANCH}'
+        echo 'BRANCH_NAME'
         echo 'env.${BRANCH_NAME}'
       }
     }
